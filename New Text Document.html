@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM ASKHR - AI-Powered HR Transformation Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+        }
+        
+        .business-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+        
+        .metric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+        
+        .success-metric {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .success-metric:hover {
+            transform: scale(1.05);
+        }
+        
+        .outcome-card {
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .outcome-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border-color: #3b82f6;
+        }
+        
+        .big-number {
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+        
+        .nexright-logo {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="business-card">
+        <div style="height:1in; background:#fff; display:flex; align-items:center; justify-content:space-between; padding:0 20px; box-shadow:0 6px 18px rgba(0,0,0,0.08); border-bottom-left-radius:12px; border-bottom-right-radius:12px;">
+    <img src="https://nexright.com/wp-content/uploads/2023/08/Nexright-Logo_Regular-_Regular-.svg" alt="Nexright Logo" style="height:60%; width:auto; object-fit:contain;">
+</div>
+
+        <!-- Header Section -->
+        <div class="gradient-bg text-white p-8">
+            <div style="text-align: center">
+                    <h1 class="text-5xl font-bold mb-3">IBM ASKHR</h1>
+                    <p class="text-2xl opacity-90">AI-Powered HR Transformation Platform</p>
+                    <p class="text-lg opacity-80 mt-2">Delivering Seamless Employee Experiences</p>
+                </div>
+            <div class="flex justify-between items-center mb-8">
+                <div class="text-right">
+                    <div class="text-sm opacity-80"></div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold ">10.1M</div>
+                    <div class="text-lg opacity-90">Yearly Interactions</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold ">765K</div>
+                    <div class="text-lg opacity-90">Automated Tasks</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold ">24</div>
+                    <div class="text-lg opacity-90">Languages Supported</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="p-8">
+            <!-- AI Agents Impact -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-6 text-gray-800 text-center">
+                    <i class="fas fa-robot text-blue-500 mr-3"></i>AI Agents Drive Seamless Experiences
+                </h2>
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-100">
+                    <p class="text-lg text-gray-700 text-center leading-relaxed">
+                        AI agents empower HR professionals to focus on higher value tasks—like coaching senior leaders and workforce planning—instead of answering the same questions about vacation policies and sick leave over and over.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Business Outcomes Grid -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                    <i class="fas fa-chart-line text-green-500 mr-3"></i>Proven Business Outcomes
+                </h2>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="outcome-card">
+                        <div class="big-number">+55</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">NPS IMPROVEMENT</div>
+                        <div class="text-xs text-gray-500">From +19 to +74</div>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="big-number">40%</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">COST REDUCTION</div>
+                        <div class="text-xs text-gray-500">HR Operating Budget</div>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="big-number">96%</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">MANAGER ADOPTION</div>
+                        <div class="text-xs text-gray-500">Platform Usage</div>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="big-number">94%</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">INQUIRIES HANDLED</div>
+                        <div class="text-xs text-gray-500">By AskHR AI</div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div class="outcome-card">
+                        <div class="big-number">93%</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">EXECUTIVE ADOPTION</div>
+                        <div class="text-xs text-gray-500">Leadership Engagement</div>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="big-number">2</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">BANDS INCREASE</div>
+                        <div class="text-xs text-gray-500">Average HR Level Growth</div>
+                    </div>
+                    
+                    <div class="outcome-card">
+                        <div class="big-number">24/7</div>
+                        <div class="text-sm font-semibold text-gray-600 mb-2">AI SUPPORT</div>
+                        <div class="text-xs text-gray-500">Always Available</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core Capabilities -->
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-8 text-gray-800 text-center">
+                    <i class="fas fa-cogs text-purple-500 mr-3"></i>Automated Processes & Capabilities
+                </h2>
+                
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">AI Knowledge Hub</h4>
+                        <p class="text-sm text-gray-600">Instant policy answers & guidance</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Multilingual Support</h4>
+                        <p class="text-sm text-gray-600">24 languages for global workforce</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Task Automation</h4>
+                        <p class="text-sm text-gray-600">765K tasks automated annually</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Employee Experience</h4>
+                        <p class="text-sm text-gray-600">Consumer-grade interface</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Cost Reduction</h4>
+                        <p class="text-sm text-gray-600">40% operational savings</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Analytics & Insights</h4>
+                        <p class="text-sm text-gray-600">Data-driven HR decisions</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">Workflow Simplification</h4>
+                        <p class="text-sm text-gray-600">Complex processes made easy</p>
+                    </div>
+                    
+                    <div class="metric-card p-6 rounded-xl text-center">
+                        <div class="feature-icon mx-auto mb-4">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4 class="font-semibold text-gray-800 mb-2">High Adoption</h4>
+                        <p class="text-sm text-gray-600">96% manager, 93% executive</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Why IBM & Next Steps -->
+            <div style="display:flex; justify-content:center; align-items: center;">
+    <div style="max-width:451px;">
+        <h2 class="text-3xl font-bold ml-11 mb-6 text-gray-800">
+            <i class="fas fa-star text-blue-500 mr-3"></i>Why IBM ASKHR?
+        </h2>
+        <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl border-2 border-blue-100">
+            <div class="space-y-6">
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mr-4 mt-1 text-xl"></i>
+                    <div>
+                        <div class="font-semibold text-lg">Proven Results</div>
+                        <p class="text-gray-600">10.1M interactions, 94% inquiry resolution</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mr-4 mt-1 text-xl"></i>
+                    <div>
+                        <div class="font-semibold text-lg">Enterprise Scale</div>
+                        <p class="text-gray-600">Global deployment with 24 language support</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mr-4 mt-1 text-xl"></i>
+                    <div>
+                        <div class="font-semibold text-lg">High Adoption</div>
+                        <p class="text-gray-600">96% manager, 93% executive engagement</p>
+                    </div>
+                </div>
+                <div class="flex items-start">
+                    <i class="fas fa-check-circle text-green-500 mr-4 mt-1 text-xl"></i>
+                    <div>
+                        <div class="font-semibold text-lg">Cost Effective</div>
+                        <p class="text-gray-600">40% reduction in HR operating costs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+
+    <script>
+        // Adoption Chart
+        const adoptionCtx = document.getElementById('adoptionChart').getContext('2d');
+        new Chart(adoptionCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Manager Adoption', 'Executive Adoption', 'Employee Usage'],
+                datasets: [{
+                    data: [96, 93, 94],
+                    backgroundColor: [
+                        '#10b981',
+                        '#3b82f6',
+                        '#8b5cf6'
+                    ],
+                    borderWidth: 3,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            usePointStyle: true
+                        }
+                    }
+                }
+            }
+        });
+
+        // Impact Chart
+        const impactCtx = document.getElementById('impactChart').getContext('2d');
+        new Chart(impactCtx, {
+            type: 'bar',
+            data: {
+                labels: ['NPS Score', 'Cost Reduction', 'Inquiries Handled', 'HR Level Increase'],
+                datasets: [{
+                    label: 'Performance Metrics',
+                    data: [55, 40, 94, 2],
+                    backgroundColor: [
+                        '#f59e0b',
+                        '#10b981', 
+                        '#3b82f6',
+                        '#8b5cf6'
+                    ],
+                    borderRadius: 8,
+                    borderSkipped: false
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#e5e7eb'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
